@@ -68,8 +68,8 @@ int main(){
         V.push_back(linia);
     }
 
-    vector<vector<bool>>odw(V.size(), vector<bool>(V[0].size(),false));
-    visited = odw;
+    visited = vector<vector<bool>>(V.size(), vector<bool>(V[0].size(),false));
+
     long long suma=0;
     for(int i=0; i<V.size(); i++){
         for(int j=0; j<V[i].size(); j++){
